@@ -1,21 +1,18 @@
 import { Component } from '@angular/core';
 import { AgentRespository } from '../data-source/aget-data';
 
-import { agents } from '../models/agents';
+import { agents } from '../agents';
 
 @Component({
   selector: 'app-agent-list',
   templateUrl: './agent-list.component.html',
   styleUrls: ['./agent-list.component.css'],
 })
-export class AgenttListComponent {
-  constructor(private readonly agentsData: AgentRespository) {}
+export class AgentListComponent {
   agents = agents;
-  data : any=   this.agentsData.getAgents();
-  
-  share() {
 
-    window.alert('The product has been shared!');
+  share() {
+    window.alert('The agent has been shared!');
   }
 }
 

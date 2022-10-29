@@ -4,21 +4,22 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';import { AgenttListComponent } from './agent-list/agent-list.component';
-import { AgentRespository } from './data-source/aget-data';
+import { TopBarComponent } from './top-bar/top-bar.component';import { AgentListComponent } from './agent-list/agent-list.component';
+import { WebSocketComponent } from './web-socket/web-socket.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: AgenttListComponent },
+      { path: '', component: AgentListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    AgenttListComponent
+    AgentListComponent,
+    WebSocketComponent
   ],
   bootstrap: [
     AppComponent
