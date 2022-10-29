@@ -11,7 +11,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';import { AgenttLis
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component:  },
+      { path: '', component: AgenttListComponent },
     ])
   ],
   declarations: [
