@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';';
+import { TopBarComponent } from './top-bar/top-bar.component';import { AgenttListComponent } from './agent-list/agent-list.component';
 
 @NgModule({
   imports: [
@@ -17,7 +17,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    AgenttListComponent
   ],
   bootstrap: [
     AppComponent
