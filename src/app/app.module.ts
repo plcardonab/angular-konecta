@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';import { AgenttListComponent } from './agent-list/agent-list.component';
+import { AgentRespository } from './data-source/aget-data';
 
 @NgModule({
   imports: [
