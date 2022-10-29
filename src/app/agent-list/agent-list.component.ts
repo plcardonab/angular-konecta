@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { AgentRespository } from '../data-source/aget-data';
 
-import { products } from '../products';
+import { agents } from '../models/agents';
 
 @Component({
   selector: 'app-agent-list',
@@ -8,9 +9,12 @@ import { products } from '../products';
   styleUrls: ['./agent-list.component.css'],
 })
 export class AgenttListComponent {
-  products = products;
-
+  constructor(private readonly agentsData: AgentRespository) {}
+  agents = agents;
+  data : any=   this.agentsData.getAgents();
+  
   share() {
+
     window.alert('The product has been shared!');
   }
 }
