@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AgentRespository } from '../data-source/aget-data';
+import { AgentRespository } from '../data-source/agent-data';
 
 import { agents } from '../models/agents';
 
@@ -8,7 +8,7 @@ import { agents } from '../models/agents';
   templateUrl: './agent-list.component.html',
   styleUrls: ['./agent-list.component.css'],
 })
-export class AgenttListComponent {
+export class AgentListComponent {
   constructor(private readonly agentsData: AgentRespository) {}
   agents = agents;
   data : any=   this.agentsData.getAgents();
